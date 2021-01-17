@@ -50,6 +50,16 @@ inquirer
       name: "license",
       choices: ["MIT", "Another one", "That other guy", "Or maybe this one"],
     },
+    {
+      type: "input",
+      message: "Please enter your github username",
+      name: "gitQuestion",
+    },
+    {
+      type: "input",
+      message: "Please enter your email",
+      name: "email",
+    },
   ])
   .then((response) => {
     const readMe = () => `# ${response.title}
@@ -60,6 +70,7 @@ inquirer
   1. [Contribution Guidelines](#Contribution-Guidelines)
   1. [Installation Instructions](#Installation-Instructions)
   1. [Test Instructions](#Test-Instructions)
+  1. [Questions](#Questions)
   1. [License](#License)
 
   ### Project Description
@@ -83,6 +94,11 @@ inquirer
   ### Test Instructions
 
   ${response.test}
+
+  ### Questions
+
+  [Github Profile](https://github.com/${response.gitQuestion})
+  [Email](${response.email})
     
   ### License
     
