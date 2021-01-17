@@ -39,7 +39,7 @@ inquirer
     
   ${response.description}
   
-  ![image](https://www.placecage.com/200/300)
+  ![image](https://www.placecage.com/600/300)
   
   ### Usage Information
     
