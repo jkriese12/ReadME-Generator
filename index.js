@@ -16,8 +16,8 @@ inquirer
   .prompt([
     {
       type: "input",
-      message: "What is your name?",
-      name: "name",
+      message: "Title of your project?",
+      name: "title",
     },
     {
       type: "input",
@@ -41,8 +41,8 @@ inquirer
     },
   ])
   .then((response) => {
-    const readMe = `How does this text work ggfgfg - ${response.name} Oh works well - ${response.link}
-${response.git}`;
+    const readMe = `# ${response.title}`;
+
     fs.writeFile("README.md", readMe, (err) =>
       err ? console.error(err) : console.log("commit logged!")
     );
