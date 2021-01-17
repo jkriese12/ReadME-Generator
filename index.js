@@ -44,11 +44,11 @@ inquirer
     const readMe = `# README Generator
 
   ## Table of Contents
-    1. [Project Description](#Project-Description)
-    1. [Usage Information](#Usage-Information)
-    1. [Contribution](#Contribution)
-    1. [Installation Instructions](#Installation-Instructions)
-    1. [License](#License)
+  1. [Project Description](#Project-Description)
+  1. [Usage Information](#Usage-Information)
+  1. [Contribution](#Contribution)
+  1. [Installation Instructions](#Installation-Instructions)
+  1. [License](#License)
 
   ### ${response.title}
     
