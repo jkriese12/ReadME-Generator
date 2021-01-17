@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-1. [ProjectDescription] (#Project-Description)
+1. [ProjectDescription] (https://www.google.com/?client=safari)
 1. [Usage-Information] (#Usage-Information)
 1. [Contribution] (#Contribution)
 1. [Installation-Instructions] (#Installation-Instructions)
