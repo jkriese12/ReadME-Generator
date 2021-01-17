@@ -98,7 +98,7 @@ inquirer
   ### Questions
 
   [Github Profile](https://github.com/${response.gitQuestion})
-  [Email](${response.email})
+  Email - (${response.email})
     
   ### License
     
