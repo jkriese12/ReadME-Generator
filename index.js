@@ -1,18 +1,8 @@
 // Inquirer and fs constants
 const inquirer = require("inquirer");
 const fs = require("fs");
-// array of questions for user
-// const questions = [];
-
-// // function to write README file
-// function writeToFile(fileName, data) {}
-
-// // function to initialize program
-// function init() {}
-
-// // function call to initialize program
-// init();
-const generate = () =>
+// Main function that holds logic for user input
+const generate = () => {
   inquirer
     .prompt([
       {
@@ -49,7 +39,7 @@ const generate = () =>
         type: "list",
         message: "Which license was used for this project?",
         name: "license",
-        choices: ["MIT", "Another one", "That other guy", "Or maybe this one"],
+        choices: ["MIT", "Mozilla", "Perl", "None of the above"],
       },
       {
         type: "input",
@@ -63,6 +53,7 @@ const generate = () =>
       },
     ])
     .then((response) => {
+      // Readme text that will get passed into created file
       const readMe = (data) => `# ${response.title}
   
   ${data}
@@ -108,16 +99,22 @@ const generate = () =>
     
   ${response.license}`;
 
-      let test = "";
+      let license = "";
 
       if (response.license === "MIT") {
-        test = "THISISISISISISIS";
+        response.license = "This project is licensed under the terms of the MIT license";
+      } else if (response.license === "Mozilla") {
+        response.license =
+          "This project is licensed under the terms of the Mozilla Public license 2.0";
+      } else if (response.license === "Perl") {
+        response.license = "This project is licensed under the terms of the Perl license";
       } else {
-        test = "Who Cares";
+        response.license = "";
       }
 
-      fs.writeFile("README.md", readMe(test), (err) =>
-        err ? console.error(err) : console.log("Data Captured! Check Enjoy your README")
+      fs.writeFile("README.md", readMe(), (err) =>
+        err ? console.error(err) : console.log("Data Captured! Enjoy your README")
       );
     });
+};
 generate();
