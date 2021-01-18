@@ -102,6 +102,19 @@ const generate = () => {
       let license = "";
 
       if (response.license === "MIT") {
+        license = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+        `;
+      } else if (response.license === "Mozilla") {
+        license =
+          "This project is licensed under the terms of the Mozilla Public license 2.0";
+      } else if (response.license === "Perl") {
+        license = "This project is licensed under the terms of the Perl license";
+      } else {
+        license = "";
+      }
+
+      if (response.license === "MIT") {
         response.license = "This project is licensed under the terms of the MIT license";
       } else if (response.license === "Mozilla") {
         response.license =
@@ -112,7 +125,7 @@ const generate = () => {
         response.license = "";
       }
 
-      fs.writeFile("README.md", readMe(), (err) =>
+      fs.writeFile("README.md", readMe(license), (err) =>
         err ? console.error(err) : console.log("Data Captured! Enjoy your README")
       );
     });
