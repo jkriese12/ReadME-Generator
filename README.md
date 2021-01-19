@@ -1,6 +1,6 @@
-# THis
+# shjfd
   
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
 
         
 
@@ -15,32 +15,32 @@
 
   ### Project Description
     
-  Hopefully
+  kdfj
   
   ![image](https://www.placecage.com/600/300)
   
   ### Usage Information
     
-  Wors
+  kdjf
     
   ### Contribution Guidelines
     
-  just
+  kdjf
     
   ### Installation Instructions
     
-  fine
+  kdjf
 
   ### Test Instructions
 
-  dkjf
+  kdjf
 
   ### Questions
 
-  [Github Profile](https://github.com/sfdf) <br>
+  [Github Profile](https://github.com/fdf) <br>
   
   Email - dfd
     
   ### License
     
-  This project is licensed under the terms of the MIT license
+  This project is licensed under the terms of the Mozilla Public license 2.0

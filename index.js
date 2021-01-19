@@ -98,22 +98,25 @@ const generate = () => {
   ### License
     
   ${response.license}`;
-
+      // Empty variable to hold the data parameter based on user choice of license
       let license = "";
-
+      // If logic determining which license picture to use
       if (response.license === "MIT") {
         license = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
         `;
       } else if (response.license === "Mozilla") {
-        license =
-          "This project is licensed under the terms of the Mozilla Public license 2.0";
+        license = `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+
+        `;
       } else if (response.license === "Perl") {
-        license = "This project is licensed under the terms of the Perl license";
+        license = `[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
+
+        `;
       } else {
         license = "";
       }
-
+      // If logic for text in license portion of README based on user choice
       if (response.license === "MIT") {
         response.license = "This project is licensed under the terms of the MIT license";
       } else if (response.license === "Mozilla") {
@@ -124,10 +127,11 @@ const generate = () => {
       } else {
         response.license = "";
       }
-
+      // Writing file
       fs.writeFile("README.md", readMe(license), (err) =>
         err ? console.error(err) : console.log("Data Captured! Enjoy your README")
       );
     });
 };
+// Calling main function
 generate();
