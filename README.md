@@ -1,6 +1,6 @@
-# ReadME Generator
+# kdf
   
-  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
         
 
@@ -15,33 +15,34 @@
 
   ### Project Description
     
-  Command line README generator using node.js that captures user input and creates a readme file that is formatted and professional looking
+  dfkjdf
   
   ![image](https://www.placecage.com/600/300)
   
   ### Usage Information
     
-  Can be used for all projects
+  dkjfd
     
   ### Contribution Guidelines
     
-  All can contribute!
+  fjdlkfjdf
     
   ### Installation Instructions
     
-  Use node
+  lkdfj
 
   ### Test Instructions
 
-  Not sure
+  kdnfd
 
   ### Questions
 
-  [Github Profile](https://github.com/jkriese12) <br>
+  [Github Profile](https://github.com/djifd) <br>
   
   Please direct all questions to the email below:
-  Email - jkriese12@gmail.com
+  
+  Email - kdfnkdfndf
     
   ### License
     
-  This project is licensed under the terms of the Mozilla Public License 2.0
+  This project is licensed under the terms of the MIT License
