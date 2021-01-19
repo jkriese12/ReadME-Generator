@@ -93,14 +93,15 @@ const generate = () => {
 
   [Github Profile](https://github.com/${response.gitQuestion}) <br>
   
+  Please direct all questions to the email below:
   Email - ${response.email}
     
   ### License
     
   ${response.license}`;
-      // Empty variable to hold the data parameter based on user choice of license
+      // Empty variable to use for the data parameter based on user choice of license
       let license = "";
-      // If logic determining which license picture to use
+      // If logic determining which license picture to use, filling license variable
       if (response.license === "MIT") {
         license = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -126,6 +127,9 @@ const generate = () => {
         response.license = "This project is licensed under the terms of the Perl License";
       } else {
         response.license = "";
+        console.log(
+          "The license section will be blank. Please add your own once the file generates"
+        );
       }
       // Writing file
       fs.writeFile("README.md", readMe(license), (err) =>
