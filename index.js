@@ -118,12 +118,12 @@ const generate = () => {
       }
       // If logic for text in license portion of README based on user choice
       if (response.license === "MIT") {
-        response.license = "This project is licensed under the terms of the MIT license";
+        response.license = "This project is licensed under the terms of the MIT License";
       } else if (response.license === "Mozilla") {
         response.license =
-          "This project is licensed under the terms of the Mozilla Public license 2.0";
+          "This project is licensed under the terms of the Mozilla Public License 2.0";
       } else if (response.license === "Perl") {
-        response.license = "This project is licensed under the terms of the Perl license";
+        response.license = "This project is licensed under the terms of the Perl License";
       } else {
         response.license = "";
       }
