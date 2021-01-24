@@ -14,8 +14,11 @@
 ### Project Description
 
 Read me generator using node.js and inquirer. Upon running of script the user will be prompted for all necessary criteria for a good read me file. After all user input has been gathered it will dynamically generate the read me file with proper formatting, working table of contents and license badge based on user choice. A generic picture is added to the read me file that the user can then change to match what they want to display for their work.
+<br>
 
 ![image](https://user-images.githubusercontent.com/73569538/105621538-ad28ba00-5dc5-11eb-9954-ceebc3777193.png)
+
+[Github Repository](https://github.com/jkriese12/ReadME-Generator)
 
 ### Usage Information
 
