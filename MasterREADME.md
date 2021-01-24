@@ -8,6 +8,7 @@
 1. [Usage Information](#Usage-Information)
 1. [Contribution](#Contribution)
 1. [Installation Instructions](#Installation-Instructions)
+1. [Questions](#Questions)
 1. [License](#License)
 
 ### Project Description
@@ -27,6 +28,14 @@ All contributions done by: Jacob Kriese
 ### Installation Instructions
 
 Must be ran in the console using node.js
+
+### Questions
+
+[Github Profile](https://github.com/jkriese12) <br>
+
+Please direct all questions to the email below:
+
+Email - jkriese12@gmail.com
 
 ### License
 
